@@ -13,6 +13,10 @@ function App() {
         id: 'e4', title: 'New Desk (Wooden)', amount: 450, date: new Date(2021, 5, 12),
     },];
 
+
+    const addExpenseHandler = expense => {
+
+    }
 /*    return React.createElement('div',{},
         React.createElement('h2',{},"Let's get started"),
         React.createElement(Expense,{items: expenses})
@@ -21,11 +25,10 @@ function App() {
 
     return (
         <div>
-            <NewExpense />
+            <NewExpense onAddExpense={addExpenseHandler}/>
             <Expense items={expenses}/>
         </div>
-    )
-
+    );
 }
 
 export default App;
